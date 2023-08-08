@@ -8,7 +8,11 @@ if (localPropertiesFile.exists()) {
 
 def flutterRoot = localProperties.getProperty('flutter.sdk')
 if (flutterRoot == null) {
+<<<<<<< HEAD
     throw new FileNotFoundException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+=======
+    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+>>>>>>> 28cb4212d57838722ddac16a9fe33bb8d0b9cc5b
 }
 
 def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
@@ -52,7 +56,10 @@ android {
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+<<<<<<< HEAD
         manifestPlaceholders = [applicationName: "android.app.Application"]
+=======
+>>>>>>> 28cb4212d57838722ddac16a9fe33bb8d0b9cc5b
     }
 
     buildTypes {
@@ -60,6 +67,17 @@ android {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
+<<<<<<< HEAD
+=======
+            manifestPlaceholders = [applicationName: "Tooth App"]
+        }
+
+        debug {
+            manifestPlaceholders = [applicationName: "Tooth App"]
+        }
+        build{
+            manifestPlaceholders = [applicationName: "Tooth App"]
+>>>>>>> 28cb4212d57838722ddac16a9fe33bb8d0b9cc5b
         }
     }
 }
