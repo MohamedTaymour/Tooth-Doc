@@ -19,6 +19,7 @@ class HomeScreen extends StatelessWidget{
           preferredSize: Size.fromHeight(height*0.075),
           child: HomeAppBar()
       ),
+      drawerEdgeDragWidth: 0,
       bottomNavigationBar: SizedBox(width: width, height: height*0.075 , child: NavBar(),),
       drawer: Drawer1(),
       );

@@ -1,21 +1,23 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:teethapp/AppScreens/Account%20dir/AccountScreen.dart';
-import 'package:teethapp/AppScreens/HomeScreen%20dir/HomeAppBar.dart';
 
-class AccountAppBar extends HomeAppBar{
-
-  AccountAppBar({super.key});
+class AccountAppBar extends StatelessWidget {
+  const AccountAppBar({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context)
-  {
+  Widget build(BuildContext context) {
     return AppBar(
-      title: Text("Account Details"),
-      leading: IconButton(
-        icon: Icon(Icons.arrow_back),
-        onPressed: () => Navigator.of(context).pop,
+      leading: BackButton(color: Colors.black,),
+      backgroundColor: Colors.white,
+      elevation: 12,
+      shadowColor: Colors.white,
+      title: const Text("Account Details"),
+      titleTextStyle: const TextStyle(
+        color: Colors.black,
+        fontSize: 20,
       ),
+      centerTitle: true,
+      shape: const RoundedRectangleBorder(borderRadius:
+      BorderRadius.only(bottomLeft: Radius.circular(12),bottomRight: Radius.circular(12))),
     );
   }
 }
