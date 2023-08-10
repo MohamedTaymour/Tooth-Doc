@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:teethapp/AppScreens/HomeScreen%20dir/HomeScreen.dart';
 import 'package:flutter/services.dart';
+
+import 'AppScreens/HomeScreen dir/HomeScreen.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(statusBarColor: Colors.transparent));

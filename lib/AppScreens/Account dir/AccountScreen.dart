@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:teethapp/AppScreens/Account%20dir/AccountAppBar.dart';
-
+import 'AccountAppBar.dart';
 class AccountScreen extends StatelessWidget {
   const AccountScreen({Key? key}) : super(key: key);
 
@@ -13,6 +12,7 @@ class AccountScreen extends StatelessWidget {
       appBar: PreferredSize(
           preferredSize: Size.fromHeight(height * 0.075),
           child: AccountAppBar()),
+      body:Image.asset("C:/Users/moham/StudioProjects/TeethApp/lib/Assets/Icons/Tooth_Doc.jpg")
     );
   }
 }
