@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:teethapp/AppScreens/HomeScreen%20dir/HomeAppBar.dart';
-import 'package:teethapp/Consts/NavBar.dart';
-import 'package:teethapp/Consts/Drawer1.dart';
+
+import '../../Consts/Drawer1.dart';
+import '../../Consts/NavBar.dart';
+import 'HomeAppBar.dart';
+
 
 class HomeScreen extends StatelessWidget{
   const HomeScreen({super.key});
