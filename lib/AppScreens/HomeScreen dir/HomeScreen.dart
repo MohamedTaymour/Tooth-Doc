@@ -5,7 +5,6 @@ import '../../Consts/Drawer1.dart';
 import '../../Consts/NavBar.dart';
 import 'HomeAppBar.dart';
 
-
 class HomeScreen extends StatelessWidget{
   const HomeScreen({super.key});
   
