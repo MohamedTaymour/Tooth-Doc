@@ -12,7 +12,6 @@ class AccountScreen extends StatelessWidget {
       appBar: PreferredSize(
           preferredSize: Size.fromHeight(height * 0.075),
           child: AccountAppBar()),
-      body:Image.asset("C:/Users/moham/StudioProjects/TeethApp/lib/Assets/Icons/Tooth_Doc.jpg")
     );
   }
 }
