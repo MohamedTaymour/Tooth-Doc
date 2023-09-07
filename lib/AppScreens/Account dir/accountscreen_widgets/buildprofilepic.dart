@@ -32,7 +32,11 @@ class build_profile_pic extends StatelessWidget {
                     height: 30,
                     width: 30,
                     padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
-                    child: SvgPicture.asset("assets/icons/star.svg",)
+                    child: LimitedBox(
+                      child: SvgPicture.asset("Assets/Icons/star.svg", width: 100, height: 100,),
+                      maxHeight: 100,
+                      maxWidth: 100,
+                    )
                   ),
                   Text("5.0"),
                 ],
