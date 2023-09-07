@@ -1,5 +1,8 @@
+import 'package:Tooth_Doc/AppScreens/Account%20dir/accountscreen_widgets/buildprofilepic.dart';
+import 'package:Tooth_Doc/AppScreens/Account%20dir/accountscreen_widgets/change_details_button.dart';
+import 'package:Tooth_Doc/AppScreens/Account%20dir/accountscreen_widgets/logout_button.dart';
 import 'package:flutter/material.dart';
-import 'AccountAppBar.dart';
+import 'accountscreen_widgets/AccountAppBar.dart';
 class AccountScreen extends StatelessWidget {
   const AccountScreen({Key? key}) : super(key: key);
 
@@ -12,7 +15,14 @@ class AccountScreen extends StatelessWidget {
       appBar: PreferredSize(
           preferredSize: Size.fromHeight(height * 0.075),
           child: AccountAppBar()),
-      body:Image.asset("C:/Users/moham/StudioProjects/TeethApp/lib/Assets/Icons/Tooth_Doc.jpg")
+      body: Column(
+        children: [
+          build_profile_pic(),
+          change_details_button(),
+          SizedBox(height: 20,),
+          logout_button(),
+        ],
+      ),
     );
   }
 }
