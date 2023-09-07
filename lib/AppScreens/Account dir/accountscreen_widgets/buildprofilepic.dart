@@ -1,6 +1,6 @@
+import 'package:Tooth_Doc/AppScreens/Account%20dir/accountscreen_widgets/StarRatings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class build_profile_pic extends StatelessWidget {
   const build_profile_pic({super.key});
@@ -28,16 +28,11 @@ class build_profile_pic extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Container(
-                    height: 30,
-                    width: 30,
-                    padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
-                    child: LimitedBox(
-                      child: SvgPicture.asset("Assets/Icons/star.svg", width: 100, height: 100,),
-                      maxHeight: 100,
-                      maxWidth: 100,
-                    )
-                  ),
+                  StarRatings(),
+                  StarRatings(),
+                  StarRatings(),
+                  StarRatings(),
+                  StarRatings(),
                   Text("5.0"),
                 ],
               ),
