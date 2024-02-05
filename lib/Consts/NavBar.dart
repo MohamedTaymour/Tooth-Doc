@@ -25,8 +25,8 @@ class _NavBar extends State<NavBar>{
     return BottomNavigationBar(items: [
       BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
       BottomNavigationBarItem(icon: Icon(Icons.search),label: "Encyclopedia"),
-      BottomNavigationBarItem(icon: Icon(Icons.menu_book_outlined),label: "Resoureces"),
-      BottomNavigationBarItem(icon: Icon(Icons.ac_unit),label: "Manage"),
+      BottomNavigationBarItem(icon: Icon(Icons.menu_book_outlined),label: "Courses"),
+      BottomNavigationBarItem(icon: Icon(Icons.quiz_sharp),label: "Quiz"),
     ],
     unselectedItemColor: Colors.grey,
     selectedItemColor: Colors.black,

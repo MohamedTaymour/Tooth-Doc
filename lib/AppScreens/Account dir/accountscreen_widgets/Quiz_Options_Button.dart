@@ -10,7 +10,7 @@ class Quiz_Options_Button extends StatelessWidget {
       title: Row(
         children: [
           Padding(padding: EdgeInsets.only(left: 7)),
-          Icon(Icons.quiz_rounded),
+          Icon(Icons.quiz_outlined),
           Padding(padding: EdgeInsets.only(left: 6)),
           Text("Quiz Options"),
         ],
