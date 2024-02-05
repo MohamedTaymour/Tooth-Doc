@@ -18,8 +18,9 @@ class AccountScreen extends StatelessWidget {
       body: Column(
         children: [
           build_profile_pic(),
+          Divider(color: Colors.grey,thickness: 1.2,),
           change_details_button(),
-          SizedBox(height: 20,),
+          Divider(color: Colors.grey,thickness: 1.2,),
           logout_button(),
         ],
       ),

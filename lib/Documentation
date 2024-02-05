@@ -1,0 +1,38 @@
+Additional text file to help document for team partners in the project for those who have difficulty accessing the official
+documentation of Tooth Doc or having difficulty accessing github
+
+--------------------------------------------------------------------------
+
+4/2/2024
+
+1- The App went to a major change in direction, it went from being a simple tool to view a 3d model of teeth, gums and nerves
+to a full on track tool for doctors, learning tool for students and a reference tool for normal users.
+
+2- I added a Classes folder to contain the new ERD form of the application, each class is for the user and the features of the
+Application
+
+3- I've made a new Database system using xampp for the application, the database will be using MySQL for now and will be in
+available for public once the first stages are done
+
+4- The initial stages of the app will most likely remain the same, with the bottom navigation bar remaining the primary navigation
+tool for the application, a drawer to be available for further options in the application and an account actions button to be the go
+to for account management
+
+5- The 3d Model for teeth will remain the most unique concept of the application and will remain a feature, including the ability to
+interact with the teeth, the level of intractability is determined according to the status of the user (Patient, Student, Doctor)
+
+6- The account section, done by Bikhet, will be changed in the following days, replacing the buttons made with a ListTitle for more
+Aesthetic appeal
+
+7- The newly introduced quiz system is an option which will be available in the future of the application, it aims to help all users
+assess their performance in general questions about topics in dental field, the rating of the exams are shown every 20 quizzes averaging
+them and placing a 5 star rating system accordingly
+
+-----------------------------------------------------------------------------
+
+5/2/2024
+
+1- Working on introducing a dark mode section for the application
+
+2- If finished on time, the next step would be working on the Login/Sign up section then some elements of the app tutorial on first use
+then some elements
