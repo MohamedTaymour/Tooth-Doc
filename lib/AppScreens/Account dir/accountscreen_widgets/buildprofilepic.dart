@@ -23,7 +23,7 @@ class build_profile_pic extends StatelessWidget {
                     image: NetworkImage("https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=2000",),
                     fit: BoxFit.cover,
                     ),
-                  borderRadius: BorderRadius.circular(36),
+                  borderRadius: BorderRadius.circular(100),
                 ),
               ),
               Row(
@@ -33,7 +33,8 @@ class build_profile_pic extends StatelessWidget {
                   StarRatings(),
                   StarRatings(),
                   StarRatings(),
-                  Text("5.0"),
+                  Padding(padding: EdgeInsets.only(left: 10,top: 10),child:Text("5.0",style: TextStyle(fontSize: 18),),)
+
                 ],
               ),
             ],

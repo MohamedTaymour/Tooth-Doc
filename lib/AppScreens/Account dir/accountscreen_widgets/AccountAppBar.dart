@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 class AccountAppBar extends StatelessWidget {
   const AccountAppBar({Key? key}) : super(key: key);
 

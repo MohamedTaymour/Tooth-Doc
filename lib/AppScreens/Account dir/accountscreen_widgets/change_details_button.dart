@@ -6,7 +6,6 @@ class change_details_button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width_of_screen = MediaQuery.of(context).size.width;
     return ListTile(
       title: Row(
         children: [
