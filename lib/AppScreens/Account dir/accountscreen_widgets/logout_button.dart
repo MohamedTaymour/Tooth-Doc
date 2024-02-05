@@ -1,3 +1,4 @@
+import 'package:Tooth_Doc/Consts/ThemeMode_Colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +21,7 @@ class logout_button extends StatelessWidget {
         fontSize: 20,
         fontWeight: FontWeight.bold,
       ),
-      textColor: Colors.black,
+      textColor: ThemeModes().FontColors[1],
       tileColor: Color(0xFFFF00),
       selectedTileColor: Color(0xEAEAEA),
       subtitle:Row(

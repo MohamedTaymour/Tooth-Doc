@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../Consts/ThemeMode_Colors.dart';
 import '../Account dir/AccountScreen.dart';
 
 class HomeAppBar extends StatelessWidget {
@@ -13,16 +14,16 @@ class HomeAppBar extends StatelessWidget {
               return IconButton(
                 icon: const Icon(Icons.settings),
                 onPressed: () => Scaffold.of(context).openDrawer(),
-                color: Colors.black,
+                color: ThemeModes().FontColors[1],
               );
             }
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: ThemeModes().BackgroundColor[1],
         elevation: 12,
-        shadowColor: Colors.white,
+        shadowColor: ThemeModes().BackgroundColor[1],
         title: const Text("Tooth Doc"),
-        titleTextStyle: const TextStyle(
-          color: Colors.black,
+        titleTextStyle: TextStyle(
+          color: ThemeModes().FontColors[1],
           fontSize: 20,
         ),
         centerTitle: true,
@@ -31,7 +32,7 @@ class HomeAppBar extends StatelessWidget {
         actions: [
           IconButton(
               icon: Icon(Icons.account_circle,
-                color: Colors.black,),
+                color: ThemeModes().FontColors[1],),
               onPressed:() {
                 Navigator.push(
                     context,

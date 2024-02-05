@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../../Consts/ThemeMode_Colors.dart';
+
 class Encycloped_Management_Button extends StatelessWidget {
   const Encycloped_Management_Button({super.key});
 
@@ -20,7 +22,7 @@ class Encycloped_Management_Button extends StatelessWidget {
         fontSize: 20,
         fontWeight: FontWeight.bold,
       ),
-      textColor: Colors.black,
+      textColor: ThemeModes().FontColors[1],
       tileColor: Color(0xFFFF00),
       selectedTileColor: Color(0xEAEAEA),
       subtitle:Row(
