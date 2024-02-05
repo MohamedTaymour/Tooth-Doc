@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class logout_button extends StatelessWidget {
-  const logout_button({super.key});
+class Course_Settings_Options extends StatelessWidget {
+  const Course_Settings_Options({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,9 +10,9 @@ class logout_button extends StatelessWidget {
       title: Row(
         children: [
           Padding(padding: EdgeInsets.only(left: 7)),
-          Icon(Icons.logout),
+          Icon(Icons.my_library_books_outlined),
           Padding(padding: EdgeInsets.only(left: 6)),
-          Text("Logout"),
+          Text("Course Settings"),
         ],
       ),
       onTap: (){},
@@ -25,7 +25,7 @@ class logout_button extends StatelessWidget {
       selectedTileColor: Color(0xEAEAEA),
       subtitle:Row(
         children: [Padding(padding: EdgeInsets.only(left: 15)),
-          Text("Return to the login screen"),
+          Text("Manage Course Privacy and Accomplishments"),
         ],),
       contentPadding: EdgeInsets.all(12),
     );

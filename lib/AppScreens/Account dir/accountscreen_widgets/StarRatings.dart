@@ -6,11 +6,11 @@ class StarRatings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 30,
+        height: 38,
         width: 30,
-        padding: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.only(top:10, left: 3),
         child: LimitedBox(
-          child: SvgPicture.asset("Assets/Icons/star.svg", width: 30, height: 30,),
+          child: SvgPicture.asset("Assets/Icons/star.svg", width: 10, height: 30,),
           maxHeight: 30,
           maxWidth: 30,
         )
