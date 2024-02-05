@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../../Consts/ThemeMode_Colors.dart';
+
 class Quiz_Options_Button extends StatelessWidget {
   const Quiz_Options_Button({super.key});
 
@@ -20,7 +22,7 @@ class Quiz_Options_Button extends StatelessWidget {
         fontSize: 20,
         fontWeight: FontWeight.bold,
       ),
-      textColor: Colors.black,
+      textColor: ThemeModes().FontColors[1],
       tileColor: Color(0xFFFF00),
       selectedTileColor: Color(0xEAEAEA),
       subtitle:Row(

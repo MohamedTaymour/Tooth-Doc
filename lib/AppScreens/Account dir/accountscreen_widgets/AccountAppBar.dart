@@ -1,3 +1,4 @@
+import 'package:Tooth_Doc/Consts/ThemeMode_Colors.dart';
 import 'package:flutter/material.dart';
 class AccountAppBar extends StatelessWidget {
   const AccountAppBar({Key? key}) : super(key: key);
@@ -5,13 +6,13 @@ class AccountAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      leading: BackButton(color: Colors.black,),
-      backgroundColor: Colors.white,
+      leading: BackButton(color: ThemeModes().FontColors[1],),
+      backgroundColor: ThemeModes().BackgroundColor[1],
       elevation: 12,
-      shadowColor: Colors.white,
+      shadowColor: ThemeModes().BackgroundColor[1],
       title: const Text("Account Details"),
-      titleTextStyle: const TextStyle(
-        color: Colors.black,
+      titleTextStyle: TextStyle(
+        color: ThemeModes().FontColors[1],
         fontSize: 20,
       ),
       centerTitle: true,

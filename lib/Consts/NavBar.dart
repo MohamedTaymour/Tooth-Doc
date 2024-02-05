@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:Tooth_Doc/Consts/ThemeMode_Colors.dart';
 import 'package:flutter/material.dart';
 
 class NavBar extends StatefulWidget{
@@ -28,9 +28,9 @@ class _NavBar extends State<NavBar>{
       BottomNavigationBarItem(icon: Icon(Icons.menu_book_outlined),label: "Courses"),
       BottomNavigationBarItem(icon: Icon(Icons.quiz_sharp),label: "Quiz"),
     ],
-    unselectedItemColor: Colors.grey,
-    selectedItemColor: Colors.black,
-    backgroundColor: Colors.white,
+    unselectedItemColor: ThemeModes().UnselectedItemColor[1],
+    selectedItemColor: ThemeModes().FontColors[1],
+    backgroundColor: ThemeModes().BackgroundColor[1],
     onTap: onTap,
     currentIndex: currentIndex,
     showUnselectedLabels: true,

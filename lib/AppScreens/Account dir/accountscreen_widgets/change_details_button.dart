@@ -1,3 +1,4 @@
+import 'package:Tooth_Doc/Consts/ThemeMode_Colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,7 @@ class change_details_button extends StatelessWidget {
       title: Row(
         children: [
           Padding(padding: EdgeInsets.only(left: 7)),
-          Icon(Icons.manage_accounts_rounded),
+          Icon(Icons.manage_accounts_rounded,),
           Padding(padding: EdgeInsets.only(left: 6)),
           Text("Edit Account"),
         ],
@@ -20,7 +21,7 @@ class change_details_button extends StatelessWidget {
         fontSize: 20,
         fontWeight: FontWeight.bold,
       ),
-      textColor: Colors.black,
+      textColor: ThemeModes().FontColors[1],
       tileColor: Color(0xFFFF00),
       selectedTileColor: Color(0xEAEAEA),
       subtitle:Row(
