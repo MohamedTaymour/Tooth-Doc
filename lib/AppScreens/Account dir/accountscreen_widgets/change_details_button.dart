@@ -7,21 +7,28 @@ class change_details_button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width_of_screen = MediaQuery.of(context).size.width;
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        color: Colors.black87,
+    return ListTile(
+      title: Row(
+        children: [
+          Padding(padding: EdgeInsets.only(left: 7)),
+          Icon(Icons.manage_accounts_rounded),
+          Padding(padding: EdgeInsets.only(left: 6)),
+          Text("Edit Account"),
+        ],
       ),
-      height: 50,
-      width: width_of_screen * 0.75,
-      child: Container(
-        padding: EdgeInsets.symmetric(vertical: 15),
-        alignment: Alignment.center,
-        child: Text(
-          "Change details",
-          style: TextStyle(color: Colors.white),
-        ),
+      onTap: (){},
+      titleTextStyle: TextStyle(
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
       ),
+      textColor: Colors.black,
+      tileColor: Color(0xFFFF00),
+      selectedTileColor: Color(0xEAEAEA),
+      subtitle:Row(
+        children: [Padding(padding: EdgeInsets.only(left: 15)),
+        Text("Account Privacy Options, Rating System, etc"),
+        ],),
+      contentPadding: EdgeInsets.all(12),
     );
   }
 }

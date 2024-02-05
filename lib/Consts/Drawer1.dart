@@ -9,7 +9,12 @@ class Drawer1 extends StatelessWidget
   Widget build(BuildContext context)
   {
     return Drawer(
-        child: Text("Hello"),
+        child: Column(
+          children: [
+            Padding(padding: EdgeInsets.only(top: 25)),
+            Divider(color: Color(0xFFB2B2B2),thickness: 2,),
+          ],
+        )
     );
   }
 }
