@@ -3,6 +3,7 @@ import 'package:Tooth_Doc/AppScreens/Account%20dir/accountscreen_widgets/Quiz_Op
 import 'package:Tooth_Doc/AppScreens/Account%20dir/accountscreen_widgets/buildprofilepic.dart';
 import 'package:Tooth_Doc/AppScreens/Account%20dir/accountscreen_widgets/change_details_button.dart';
 import 'package:Tooth_Doc/AppScreens/Account%20dir/accountscreen_widgets/logout_button.dart';
+import 'package:Tooth_Doc/Consts/MyBehavior.dart';
 import 'package:Tooth_Doc/Consts/ThemeMode_Colors.dart';
 import 'package:flutter/material.dart';
 import 'accountscreen_widgets/AccountAppBar.dart';
@@ -19,7 +20,9 @@ class AccountScreen extends StatelessWidget {
       appBar: PreferredSize(
           preferredSize: Size.fromHeight(height * 0.075),
           child: AccountAppBar()),
-      body: ListView(
+      body: ScrollConfiguration(
+      behavior: MyBehavior(),
+      child: ListView(
         children: [
           build_profile_pic(),
           Divider(color: ThemeModes().DividerColor[1],thickness: 1.5,),
@@ -32,11 +35,12 @@ class AccountScreen extends StatelessWidget {
           Encycloped_Management_Button(),
           Divider(color: ThemeModes().DividerColor[1],thickness: 1.5,),
           logout_button(),
-          Divider(color: ThemeModes().DividerColor[1],thickness: 1.5,),
         ].map((e) => Padding(
           padding: EdgeInsets.only(top: 7),
           child: e,
         ),).toList(),
+        physics: ClampingScrollPhysics(),
+      ),
       ),
     );
   }

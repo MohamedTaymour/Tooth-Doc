@@ -22,15 +22,17 @@ class _NavBar extends State<NavBar>{
   @override
   Widget build(BuildContext context)
   {
+    int theme_color = ThemeModes().DarkMode1;
+    
     return BottomNavigationBar(items: [
       BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
       BottomNavigationBarItem(icon: Icon(Icons.search),label: "Encyclopedia"),
       BottomNavigationBarItem(icon: Icon(Icons.menu_book_outlined),label: "Courses"),
       BottomNavigationBarItem(icon: Icon(Icons.quiz_sharp),label: "Quiz"),
     ],
-    unselectedItemColor: ThemeModes().UnselectedItemColor[1],
-    selectedItemColor: ThemeModes().FontColors[1],
-    backgroundColor: ThemeModes().BackgroundColor[1],
+    unselectedItemColor: ThemeModes().UnselectedItemColor[theme_color],
+    selectedItemColor: ThemeModes().FontColors[theme_color],
+    backgroundColor: ThemeModes().BackgroundColor[theme_color],
     onTap: onTap,
     currentIndex: currentIndex,
     showUnselectedLabels: true,
