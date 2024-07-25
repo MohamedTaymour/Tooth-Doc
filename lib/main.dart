@@ -1,7 +1,9 @@
+import 'package:Tooth_Doc/AppScreens/HomeScreen%20dir/HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'AppScreens/HomeScreen dir/HomeScreen.dart';
+import 'AppScreens/Forum dir/forum.dart';
+
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      home: Forum(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
     );
