@@ -10,7 +10,7 @@ class logout_button extends StatelessWidget {
       title: Row(
         children: [
           Padding(padding: EdgeInsets.only(left: 7)),
-          Icon(Icons.logout),
+          Icon(Icons.logout ,color: ThemeModes().FontColors[1]),
           Padding(padding: EdgeInsets.only(left: 6)),
           Text("Logout"),
         ],

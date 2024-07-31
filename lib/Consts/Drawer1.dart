@@ -1,19 +1,46 @@
 import 'package:flutter/material.dart';
 
-class Drawer1 extends StatelessWidget
-{
-  Drawer1 ({super.key});
+class Drawer1 extends StatefulWidget {
+
+  Drawer1({super.key});
 
   @override
+  State<Drawer1> createState() => _Drawer1();
+}
+  class _Drawer1 extends State<Drawer1>{
+    bool DarkMode1 = false;
+
+    @override
   Widget build(BuildContext context)
   {
     return Drawer(
-        child: Column(
+        child: ScrollConfiguration(
+        behavior: MyBehavior(),
+        child: ListView(
           children: [
-            Padding(padding: EdgeInsets.only(top: 25)),
-            Divider(color: Color(0xFFB2B2B2),thickness: 2,),
-          ],
-        )
+            Divider(color: ThemeModes().DividerColor[1],thickness: 2,),
+            Expanded(child: ListTile(
+              title: Row(
+                children: [
+                  Text("Dark Mode "),
+                  Icon(Icons.dark_mode_outlined),
+                  Padding(padding: EdgeInsets.only(left:100)),
+                  Switch(
+                    value: DarkMode1, // Use the null assertion operator
+                    onChanged: (bool val) {
+                      setState(() {
+                        DarkMode1 = val;
+                      });
+                    },
+                  ),
+                ],
+              ),
+            ),
+            ),
+            Divider(color: ThemeModes().DividerColor[1],thickness: 2,),
+          ].map((e) => Padding(padding: EdgeInsets.only(bottom: 10),child: e,)).toList(),
+        ),
+        ),
     );
   }
 }

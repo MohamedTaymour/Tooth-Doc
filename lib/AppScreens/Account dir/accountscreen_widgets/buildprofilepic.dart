@@ -1,4 +1,5 @@
 import 'package:Tooth_Doc/AppScreens/Account%20dir/accountscreen_widgets/StarRatings.dart';
+import 'package:Tooth_Doc/Consts/ThemeMode_Colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -41,7 +42,7 @@ class build_profile_pic extends StatelessWidget {
           ),
           Container(
               margin: EdgeInsets.only(left: 9,bottom: 5),
-              child: Text("Mohamed Taymour"),
+              child: Text("Mohamed Taymour", style: TextStyle(color: ThemeModes().FontColors[1])),
           ),
         ],
       ),

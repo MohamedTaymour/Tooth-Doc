@@ -11,7 +11,7 @@ class Course_Settings_Options extends StatelessWidget {
       title: Row(
         children: [
           Padding(padding: EdgeInsets.only(left: 7)),
-          Icon(Icons.my_library_books_outlined),
+          Icon(Icons.my_library_books_outlined,color: ThemeModes().FontColors[1]),
           Padding(padding: EdgeInsets.only(left: 6)),
           Text("Course Settings"),
         ],

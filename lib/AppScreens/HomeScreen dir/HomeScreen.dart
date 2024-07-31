@@ -4,8 +4,14 @@ import '../../Consts/Drawer1.dart';
 import '../../Consts/NavBar.dart';
 import 'HomeAppBar.dart';
 
-class HomeScreen extends StatelessWidget{
-  const HomeScreen({super.key});
+class HomeScreen extends StatefulWidget {
+  HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreen();
+}
+
+class _HomeScreen extends State<HomeScreen>{
 
   @override
   Widget build(BuildContext context)

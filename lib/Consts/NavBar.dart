@@ -22,6 +22,8 @@ class _NavBar extends State<NavBar>{
   @override
   Widget build(BuildContext context)
   {
+    int theme_color = ThemeModes().DarkMode1;
+    
     return BottomNavigationBar(items: [
       BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
       BottomNavigationBarItem(icon: Icon(Icons.search),label: "Encyclopedia"),
