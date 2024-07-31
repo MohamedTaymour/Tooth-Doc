@@ -12,7 +12,7 @@ class Encycloped_Management_Button extends StatelessWidget {
       title: Row(
         children: [
           Padding(padding: EdgeInsets.only(left: 7)),
-          Icon(Icons.manage_search),
+          Icon(Icons.manage_search, color: ThemeModes().FontColors[1]),
           Padding(padding: EdgeInsets.only(left: 6)),
           Text("Manage Encyclopedia"),
         ],

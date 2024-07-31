@@ -11,7 +11,7 @@ class change_details_button extends StatelessWidget {
       title: Row(
         children: [
           Padding(padding: EdgeInsets.only(left: 7)),
-          Icon(Icons.manage_accounts_rounded,),
+          Icon(Icons.manage_accounts_rounded, color: ThemeModes().FontColors[1],),
           Padding(padding: EdgeInsets.only(left: 6)),
           Text("Edit Account"),
         ],

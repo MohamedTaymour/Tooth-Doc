@@ -17,6 +17,7 @@ class AccountScreen extends StatelessWidget {
     final double height = MediaQuery.of(context).size.height;
 
     return Scaffold(
+      backgroundColor: Colors.black26,
       appBar: PreferredSize(
           preferredSize: Size.fromHeight(height * 0.075),
           child: AccountAppBar()),
@@ -25,15 +26,15 @@ class AccountScreen extends StatelessWidget {
       child: ListView(
         children: [
           build_profile_pic(),
-          Divider(color: ThemeModes().DividerColor[1],thickness: 1.5,),
+          Divider(color: ThemeModes().FontColors[1],thickness: 1.5,),
           change_details_button(),
-          Divider(color: ThemeModes().DividerColor[1],thickness: 1.5,),
+          Divider(color: ThemeModes().FontColors[1],thickness: 1.5,),
           Quiz_Options_Button(),
-          Divider(color: ThemeModes().DividerColor[1],thickness: 1.5,),
+          Divider(color: ThemeModes().FontColors[1],thickness: 1.5,),
           Course_Settings_Options(),
-          Divider(color: ThemeModes().DividerColor[1],thickness: 1.5,),
+          Divider(color: ThemeModes().FontColors[1],thickness: 1.5,),
           Encycloped_Management_Button(),
-          Divider(color: ThemeModes().DividerColor[1],thickness: 1.5,),
+          Divider(color: ThemeModes().FontColors[1],thickness: 1.5,),
           logout_button(),
         ].map((e) => Padding(
           padding: EdgeInsets.only(top: 7),
