@@ -38,6 +38,7 @@ class _NavBar extends State<NavBar>{
     showUnselectedLabels: true,
     elevation: 12,
     type: BottomNavigationBarType.fixed,
+    enableFeedback: false,
     );
   }
 }

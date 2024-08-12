@@ -2,6 +2,9 @@ import 'package:Tooth_Doc/Consts/MyBehavior.dart';
 import 'package:Tooth_Doc/Consts/ThemeMode_Colors.dart';
 import 'package:flutter/material.dart';
 
+import 'MyBehavior.dart';
+import 'ThemeMode_Colors.dart';
+
 class Drawer1 extends StatefulWidget {
 
   Drawer1({super.key});
